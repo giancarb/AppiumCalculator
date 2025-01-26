@@ -18,17 +18,13 @@ public class BasePage {
     public static final String RESULT = "com.test.calc:id/result";
 
 
-
-
-
-
-    public String getTitle (AndroidDriver driver){
+    public String getTitle(AndroidDriver driver) {
 
         return driver.findElement(By.id(TITLE)).getText();
     }
 
 
-    public void add (AndroidDriver driver){
+    public void add(AndroidDriver driver) {
 
         driver.findElement(By.id(ADD)).click();
     }
@@ -39,12 +35,12 @@ public class BasePage {
 
     public void squareRoot(AndroidDriver driver) {
 
-            driver.findElement(By.id(SQRT)).click();
+        driver.findElement(By.id(SQRT)).click();
     }
 
     public void divideByTwo(AndroidDriver driver) {
         driver.findElement(By.id(DIVIDE)).click();
-        }
+    }
 
 
     public void multiplyByTwo(AndroidDriver driver) {
@@ -56,12 +52,12 @@ public class BasePage {
     }
 
     public String getResult(AndroidDriver driver) {
-       return driver.findElement(By.id(RESULT)).getText();
+        return driver.findElement(By.id(RESULT)).getText();
     }
 
 
     public String getRawValue(String rawValue) {
-       return rawValue.substring(8);
+        return rawValue.substring(8);
     }
 
 

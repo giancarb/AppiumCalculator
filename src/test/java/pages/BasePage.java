@@ -61,7 +61,7 @@ public class BasePage {
 
 
     public String getRawValue(String rawValue) {
-       return rawValue.substring(8, rawValue.length());
+       return rawValue.substring(8);
     }
 
 

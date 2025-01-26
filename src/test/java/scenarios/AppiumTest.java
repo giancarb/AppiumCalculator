@@ -1,6 +1,6 @@
 package scenarios;
 
-import org.testng.annotations.*;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.BasePage;
 
@@ -10,10 +10,10 @@ import static org.testng.Assert.assertEquals;
 
 public class AppiumTest extends AndroidSetup {
 
-    BasePage basePage = new BasePage();
+    final BasePage basePage = new BasePage();
 
     @Test
-    public void smokeTest() throws InterruptedException, MalformedURLException {
+    public void smokeTest() throws MalformedURLException {
 
         prepareAndroidForAppium();
 
@@ -45,7 +45,7 @@ public class AppiumTest extends AndroidSetup {
 
     //Verify Integer Operations
     @Test
-    public void UAT1() throws InterruptedException, MalformedURLException {
+    public void UAT1() throws MalformedURLException {
 
         prepareAndroidForAppium();
 
@@ -119,7 +119,7 @@ public class AppiumTest extends AndroidSetup {
 
     //Verify Float Operations
     @Test
-    public void UAT2() throws InterruptedException, MalformedURLException {
+    public void UAT2() throws MalformedURLException {
 
         prepareAndroidForAppium();
 
@@ -192,7 +192,7 @@ public class AppiumTest extends AndroidSetup {
 
     //Verify Negative Operations
     @Test
-    public void UAT3() throws InterruptedException, MalformedURLException {
+    public void UAT3() throws MalformedURLException {
 
         prepareAndroidForAppium();
         SoftAssert softAssertion = new SoftAssert();
@@ -253,7 +253,7 @@ public class AppiumTest extends AndroidSetup {
 
     //Verify FIRST Operation
     @Test
-    public void UAT4() throws InterruptedException, MalformedURLException {
+    public void UAT4() throws MalformedURLException {
 
         prepareAndroidForAppium();
         SoftAssert softAssertion = new SoftAssert();
@@ -346,7 +346,7 @@ public class AppiumTest extends AndroidSetup {
 
     // Verify STREST test
     @Test
-    public void UAT5() throws InterruptedException, MalformedURLException {
+    public void UAT5() throws MalformedURLException {
 
         prepareAndroidForAppium();
 

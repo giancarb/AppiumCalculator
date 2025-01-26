@@ -17,10 +17,10 @@ public class AndroidSetup {
 
         UiAutomator2Options options = new UiAutomator2Options()
                 .setUdid("emulator-5554")
-                .setApp("/Users/gianlucacarbone/Dev/Appium/AppiumTestForCalculator/apps/app.apk")
-                .setAppActivity("com.activities.CalculatorActivity")
+                .setApp("/Users/gianlucacarbone/Dev/Appium/AppiumCalculator/apps/app.apk")
+                .setAppActivity(".activities.CalculatorActivity")
                 .setAppPackage("com.test.calc")
-                .setDeviceName("")
+                .setDeviceName("Pixel 5 API 22")
                 .setPlatformVersion("5.1")
                 .setPlatformName("Android")
                 .setAutomationName("UiAutomator2");
